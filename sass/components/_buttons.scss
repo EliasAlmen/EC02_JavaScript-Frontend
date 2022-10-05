@@ -1,0 +1,22 @@
+.button{
+    @include font-16-semi;
+    width: 11.75rem;
+    height: 3.75rem;
+    border: none;
+    text-align: center;
+}
+
+.bg-red{
+    background-color: $color-theme;
+    color: $color-white;
+}
+
+.bg-dark{
+    background-color: $color-grey-dark;
+    color: $color-white;
+}
+
+.bg-light{
+    background-color: $color-white;
+    color: $color-black;
+}

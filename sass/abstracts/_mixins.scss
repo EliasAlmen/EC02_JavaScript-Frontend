@@ -1,0 +1,60 @@
+// FONT SIZES, Dont know if best practice? May want functions instead?
+@mixin font-65-bold {
+    font-size: $font-size-65;
+    font-weight: $font-weight-bold-extra;
+}
+
+@mixin font-45-bold {
+    font-size: $font-size-45;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-24-bold {
+    font-size: $font-size-24;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-20-bold {
+    font-size: $font-size-20;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-20-semi {
+    font-size: $font-size-20;
+    font-weight: $font-weight-bold-semi;
+}
+
+@mixin font-20 {
+    font-size: $font-size-20;
+    font-weight: $font-weight-regular;
+}
+
+@mixin font-18-bold {
+    font-size: $font-size-20;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-18-semi {
+    font-size: $font-size-18;
+    font-weight: $font-weight-bold-semi;
+}
+
+@mixin font-16-semi {
+    font-size: $font-size-16;
+    font-weight: $font-weight-bold-semi;
+}
+
+@mixin font-16-medium {
+    font-size: $font-size-16;
+    font-weight: $font-weight-medium;
+}
+
+@mixin font-14 {
+    font-size: $font-size-14;
+    font-weight: $font-weight-regular;
+}
+
+@mixin font-13-medium {
+    font-size: $font-size-13;
+    font-weight: $font-weight-medium;
+}

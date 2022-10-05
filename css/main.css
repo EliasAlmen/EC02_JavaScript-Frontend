@@ -3,6 +3,7 @@ html, body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  color: #23262A;
 }
 
 a {
@@ -11,4 +12,49 @@ a {
 
 ul, ol {
   text-decoration: none;
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: 600;
+  width: 11.75rem;
+  height: 3.75rem;
+  border: none;
+  text-align: center;
+}
+
+.bg-red {
+  background-color: #FF7373;
+  color: #FFFFFF;
+}
+
+.bg-dark {
+  background-color: #616365;
+  color: #FFFFFF;
+}
+
+.bg-light {
+  background-color: #FFFFFF;
+  color: #23262A;
+}
+
+.placeholder-bg {
+  background-image: linear-gradient(to right, #E6E6E6, #FFFFFF);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.063rem;
+}
+.header .main-nav {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.header .main-nav a {
+  color: #23262A;
+}
+.header .main-nav a:hover {
+  color: #FF7373;
 }/*# sourceMappingURL=main.css.map */

@@ -1,10 +1,15 @@
 // COLORS
 $color-grey-dark: #616365;
-$color-grey: #BEBEBE;
+$color-grey: #BEBEBE; // zero objects use this color? hm.
+$color-grey-dont-use: #E6E6E6;
 $color-grey-light: #F5F5F5;
 $color-white: #FFFFFF;
 $color-black: #23262A;
+// $color-black2: #222529; This color was also used in wireframe, but screw it. I assume the wireframe creator made an error?
 $color-theme: #FF7373;
+
+// COLOR GRADIENTS
+$color-grey-gradient-light: linear-gradient(to right, $color-grey-dont-use, $color-white);
 
 // FONTS
 $font-poppins: 'Poppins', sans-serif;
