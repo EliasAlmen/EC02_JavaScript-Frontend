@@ -1,0 +1,75 @@
+.featured{
+    display: flex;
+    justify-content: center;
+    @include font-20-bold;
+    h3{
+        margin-bottom: 1.5rem;
+    }
+    .container-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 75rem;
+        .card{
+            width: 16rem;
+            height: 20rem;
+            margin-bottom: 1.875rem;
+            margin-right: 1.875rem;
+            .img-container{
+                background-color: $color-grey-light;
+                height: 13rem;
+                position: relative;
+                overflow: hidden;
+                transition: background-color 250ms;
+                .quick-view{
+                    position: absolute;
+                    width: 100%;
+                    z-index: 1;
+                    top: 100%;
+                    transition: top 250ms;
+                }
+                .quick-menu{
+                    position: absolute;
+                    margin-top: 0.5rem;
+                    left: 100%;
+                    transition: left 250ms;
+                    a{
+                        display: block;
+                        img{
+                            margin: -0.75rem;
+                        }
+                    }
+                }
+                &:hover{
+                    background-color: $color-black-hover;
+                    .quick-view{
+                        top: 76%;
+                    }
+                    .quick-menu{
+                        left: 80%;
+                    }
+                }
+            }
+            .text{
+                h5{
+                    color: $color-grey-dark;
+                    @include font-13-medium;
+                    letter-spacing: 0.1rem;
+                    margin: 0.25rem 0;
+                    padding: 0;
+                }
+                h6{
+                    @include font-16-semi;
+                    letter-spacing: 0.1rem;
+                    margin: 0.25rem 0;
+                    padding: 0;
+                }
+                .price{
+                    @include font-18-semi;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

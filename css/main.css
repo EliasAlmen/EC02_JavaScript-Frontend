@@ -15,6 +15,8 @@ html, body {
 
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 ul, ol {
@@ -25,6 +27,7 @@ ul, ol {
   max-width: 1680px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .button {
@@ -82,6 +85,17 @@ ul, ol {
   color: #23262A;
 }
 
+.btn-hover {
+  width: 100%;
+  height: 3.125rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.btn-hover:hover:after, .btn-hover:hover:before {
+  width: calc(100% - 1rem);
+  height: calc(100% - 1rem);
+}
+
 .placeholder-bg {
   background-image: linear-gradient(to right, #E6E6E6, #FFFFFF);
   height: auto;
@@ -136,6 +150,12 @@ ul, ol {
   height: 35rem;
   align-items: center;
   margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.banner h2 {
+  font-size: 2.813rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 .banner .banner-big {
   display: flex;
@@ -148,13 +168,91 @@ ul, ol {
   max-width: 32.625rem;
   padding-left: 3.125rem;
 }
-.banner .banner-big .clearance h2 {
-  font-size: 2.813rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
 .banner .banner-small {
   display: flex;
   align-items: center;
   position: relative;
+}
+.banner .banner-small .arrivals {
+  position: absolute;
+  margin-top: 5rem;
+  padding-left: 3.125rem;
+}
+
+.featured {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+.featured h3 {
+  margin-bottom: 1.5rem;
+}
+.featured .container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 75rem;
+}
+.featured .container-cards .card {
+  width: 16rem;
+  height: 20rem;
+  margin-bottom: 1.875rem;
+  margin-right: 1.875rem;
+}
+.featured .container-cards .card .img-container {
+  background-color: #F5F5F5;
+  height: 13rem;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 250ms;
+}
+.featured .container-cards .card .img-container .quick-view {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 100%;
+  transition: top 250ms;
+}
+.featured .container-cards .card .img-container .quick-menu {
+  position: absolute;
+  margin-top: 0.5rem;
+  left: 100%;
+  transition: left 250ms;
+}
+.featured .container-cards .card .img-container .quick-menu a {
+  display: block;
+}
+.featured .container-cards .card .img-container .quick-menu a img {
+  margin: -0.75rem;
+}
+.featured .container-cards .card .img-container:hover {
+  background-color: rgba(35, 38, 42, 0.2039215686);
+}
+.featured .container-cards .card .img-container:hover .quick-view {
+  top: 76%;
+}
+.featured .container-cards .card .img-container:hover .quick-menu {
+  left: 80%;
+}
+.featured .container-cards .card .text h5 {
+  color: #616365;
+  font-size: 0.813rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin: 0.25rem 0;
+  padding: 0;
+}
+.featured .container-cards .card .text h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin: 0.25rem 0;
+  padding: 0;
+}
+.featured .container-cards .card .text .price {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */

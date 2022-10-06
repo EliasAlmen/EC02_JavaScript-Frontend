@@ -3,6 +3,12 @@
     height: 35rem;
     align-items: center;
     margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    h2{
+        @include font-45-bold;
+        margin-bottom: 1rem;
+    }
 
     .banner-big{
         display: flex;
@@ -13,10 +19,7 @@
             display: block;
             max-width: 32.625rem;
             padding-left: 3.125rem;
-            h2{
-                @include font-45-bold;
-                margin-bottom: 1rem;
-            }
+            
         }
     }
 
@@ -24,7 +27,10 @@
         display: flex;
         align-items: center;
         position: relative;
+        .arrivals{
+            position: absolute;
+            margin-top: 5rem;
+            padding-left: 3.125rem;
+        }
     }
-
-    
 }
