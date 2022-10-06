@@ -250,7 +250,7 @@ ul, ol {
   margin: 0.25rem 0;
   padding: 0;
 }
-.featured .container-cards .card .text .price {
+.featured .container-cards .card .text p {
   font-size: 1.125rem;
   font-weight: 600;
   margin: 0;
