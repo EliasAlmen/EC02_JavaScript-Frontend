@@ -1,0 +1,30 @@
+.banner{
+    display: flex;
+    height: 35rem;
+    align-items: center;
+    margin-top: 4rem;
+
+    .banner-big{
+        display: flex;
+        align-items: center;
+        position: relative;
+        .clearance{
+            position: absolute;
+            display: block;
+            max-width: 32.625rem;
+            padding-left: 3.125rem;
+            h2{
+                @include font-45-bold;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .banner-small{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    
+}

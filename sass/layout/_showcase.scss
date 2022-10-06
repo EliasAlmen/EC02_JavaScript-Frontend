@@ -1,0 +1,22 @@
+.showcase{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .sale{
+        text-align: center;
+        h1{
+            @include font-65-bold;
+            margin: 0;
+            padding: 0;
+            line-height: 5rem;
+            letter-spacing: 0.25rem;
+        }
+
+        p{
+            @include font-20;
+            padding: 0;
+            margin: 2rem 0;
+        }
+    }
+}

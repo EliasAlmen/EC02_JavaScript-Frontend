@@ -3,17 +3,18 @@
     justify-content: space-between;
     align-items: center;
     height: 3.063rem;
+    padding: 2.5rem 0;
 
-    .main-nav{
+    .nav-text{
         @include font-16-medium;
-        
-
         a{
             color: $color-black;
             &:hover{
                 color: $color-theme;
             }
         }
-        
+        a ~ a {
+            margin-left: 1.875rem;
+        }
     }
 }

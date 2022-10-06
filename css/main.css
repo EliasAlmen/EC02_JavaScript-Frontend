@@ -1,9 +1,16 @@
 @import 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html, body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #23262A;
+  margin: auto;
 }
 
 a {
@@ -14,6 +21,12 @@ ul, ol {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .button {
   font-size: 1rem;
   font-weight: 600;
@@ -21,6 +34,37 @@ ul, ol {
   height: 3.75rem;
   border: none;
   text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+.button::after, .button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1.46875rem;
+  height: 35%;
+  border: 0.125rem solid;
+  transition: all 0.6s;
+}
+.button::after {
+  bottom: 0.5rem;
+  right: 0.5rem;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #FFFFFF;
+  border-right-color: #FFFFFF;
+}
+.button::before {
+  top: 0.5rem;
+  left: 0.5rem;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #FFFFFF;
+  border-left-color: #FFFFFF;
+}
+.button:hover:after, .button:hover:before {
+  width: 10.75rem;
+  height: 2.75rem;
 }
 
 .bg-red {
@@ -29,7 +73,7 @@ ul, ol {
 }
 
 .bg-dark {
-  background-color: #616365;
+  background-color: #23262A;
   color: #FFFFFF;
 }
 
@@ -40,6 +84,7 @@ ul, ol {
 
 .placeholder-bg {
   background-image: linear-gradient(to right, #E6E6E6, #FFFFFF);
+  height: auto;
 }
 
 .header {
@@ -47,14 +92,69 @@ ul, ol {
   justify-content: space-between;
   align-items: center;
   height: 3.063rem;
+  padding: 2.5rem 0;
 }
-.header .main-nav {
+.header .nav-text {
   font-size: 1rem;
   font-weight: 500;
 }
-.header .main-nav a {
+.header .nav-text a {
   color: #23262A;
 }
-.header .main-nav a:hover {
+.header .nav-text a:hover {
   color: #FF7373;
+}
+.header .nav-text a ~ a {
+  margin-left: 1.875rem;
+}
+
+.showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showcase .sale {
+  text-align: center;
+}
+.showcase .sale h1 {
+  font-size: 4.063rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  line-height: 5rem;
+  letter-spacing: 0.25rem;
+}
+.showcase .sale p {
+  font-size: 1.25em;
+  font-weight: 400;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.banner {
+  display: flex;
+  height: 35rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+.banner .banner-big {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.banner .banner-big .clearance {
+  position: absolute;
+  display: block;
+  max-width: 32.625rem;
+  padding-left: 3.125rem;
+}
+.banner .banner-big .clearance h2 {
+  font-size: 2.813rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.banner .banner-small {
+  display: flex;
+  align-items: center;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
