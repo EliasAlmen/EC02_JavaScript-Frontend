@@ -1,0 +1,22 @@
+.breadcrumb{
+    max-width: 69.375rem;
+    margin-bottom: 2rem;
+    ul{
+        text-align: start;
+        padding: 0;
+
+        li{
+            display: inline;
+            @include font-16-medium;
+            
+            a{
+                color: $color-black;
+                margin-right: 0.5rem;
+                &:hover{
+                    color: $color-theme;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -19,8 +19,9 @@ a {
   padding: 0;
 }
 
-ul, ol {
+ul, ol, li {
   text-decoration: none;
+  list-style-type: none;
 }
 
 .container {
@@ -117,6 +118,7 @@ ul, ol {
 }
 .header .nav-text a:hover {
   color: #FF7373;
+  text-decoration: underline;
 }
 .header .nav-text a ~ a {
   margin-left: 1.875rem;
@@ -257,15 +259,50 @@ ul, ol {
   padding: 0;
 }
 
-#map {
-  height: 400px;
-  /* The height is 400 pixels */
+.map {
+  height: 24.125rem;
   width: 100%;
-  /* The width is the width of the web page */
-  background-color: #F5F5F5;
 }
 
-form {
+.form {
   height: 22rem;
-  background-color: #616365;
+  max-width: 69.375rem;
+  margin-top: 3rem;
+}
+.form h1 {
+  text-align: start;
+}
+.form input {
+  border: 1px solid #F5F5F5;
+  height: 3.125rem;
+}
+.form #userNameInput {
+  max-width: 33.625rem;
+  width: 100%;
+}
+.form #userEmailInput {
+  max-width: 33.625rem;
+  width: 100%;
+}
+
+.breadcrumb {
+  max-width: 69.375rem;
+  margin-bottom: 2rem;
+}
+.breadcrumb ul {
+  text-align: start;
+  padding: 0;
+}
+.breadcrumb ul li {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.breadcrumb ul li a {
+  color: #23262A;
+  margin-right: 0.5rem;
+}
+.breadcrumb ul li a:hover {
+  color: #FF7373;
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

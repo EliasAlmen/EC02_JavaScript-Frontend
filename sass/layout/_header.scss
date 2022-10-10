@@ -11,6 +11,7 @@
             color: $color-black;
             &:hover{
                 color: $color-theme;
+                text-decoration: underline;
             }
         }
         a ~ a {
