@@ -255,4 +255,17 @@ ul, ol {
   font-weight: 600;
   margin: 0;
   padding: 0;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  background-color: #F5F5F5;
+}
+
+form {
+  height: 22rem;
+  background-color: #616365;
 }/*# sourceMappingURL=main.css.map */
