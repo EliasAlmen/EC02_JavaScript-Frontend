@@ -40,14 +40,15 @@
     <section class="form container">
         <h1>Come in Contact with Us</h1>
         <form class="contact">
-            <div>
-                <input type="text" name="userName" id="userNameInput">
+            <div class="name_email">
+                <span><input type="text" name="userName" id="userNameInput" placeholder="Your Name"></span>
+                <span><input type="email" name="userEmail" id="userEmailInput" placeholder="Your Email"></span>
             </div>
             <div>
-                <input type="email" name="userEmail" id="userEmailInput">
+                <textarea type="text" name="userComment" id="userCommentInput" placeholder="Comments"></textarea>
             </div>
-            <div>
-                <input type="text" name="userComment" id="userCommentInput">
+            <div class="submitbutton">
+                <button type="submit" class="button bg-red">Post Comments</button>
             </div>
         </form>
     </section>

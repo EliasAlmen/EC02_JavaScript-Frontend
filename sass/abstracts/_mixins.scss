@@ -49,6 +49,11 @@
     font-weight: $font-weight-medium;
 }
 
+@mixin font-16 {
+    font-size: $font-size-16;
+    font-weight: $font-weight-regular;
+}
+
 @mixin font-14 {
     font-size: $font-size-14;
     font-weight: $font-weight-regular;

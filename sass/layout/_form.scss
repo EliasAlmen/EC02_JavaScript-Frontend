@@ -2,19 +2,40 @@
     height: 22rem;
     max-width: 69.375rem;
     margin-top: 3rem;
+    margin-bottom: 6.25rem;
+    .contact{
+        .name_email{
+            display: flex;
+            justify-content: space-between;
+        }
+        .submitbutton{
+            display: flex;
+            margin-top: 2.125rem;
+        }
+    }
     h1{
     text-align: start;
     }
-    input{
-        border: 1px solid $color-grey-light;
+    input, textarea{
+        border: 1px solid $color-grey;
         height: 3.125rem;
+        @include font-16;
+        color: $color-black;
+        font-family: 'Poppins';
+        padding: 0.5rem;
+    }
+    textarea{
+        resize: none;
     }
     #userNameInput{
-        max-width: 33.625rem;
-        width: 100%;
+        width: 33.625rem;
     }
     #userEmailInput{
-        max-width: 33.625rem;
+        width: 33.625rem;
+    }
+    #userCommentInput{
+        margin-top: 2.125rem;
         width: 100%;
+        height: 8.75rem;
     }
 }
