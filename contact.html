@@ -7,6 +7,7 @@
    <title>EC02_JavaScript-Frontend</title>
    <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
    <link href="css/main.css" rel="stylesheet">
+   <script defer src="src/js/app.js"></script>
 </head>
 <body>
     <!-- header.scss -->
@@ -39,21 +40,25 @@
     </section>
     <section class="form container">
         <h1>Come in Contact with Us</h1>
-        <form class="contact">
+        <form onsubmit="onSubmit(event)" class="contact" novalidate>
             <div class="name_email">
-                <span><input type="text" name="userName" id="userNameInput" placeholder="Your Name"></span>
-                <span><input type="email" name="userEmail" id="userEmailInput" placeholder="Your Email"></span>
+                <span>
+                    <input type="text" name="userName" id="userName-input" placeholder="Your Name" required data-required-min="2">
+                    <div id="userName-error"></div>
+                </span>
+                <span>
+                    <input type="email" name="userEmail" id="userEmail-input" placeholder="Your Email" required>
+                    <div id="userEmail-error"></div>
+                </span>
             </div>
             <div>
-                <textarea type="text" name="userComment" id="userCommentInput" placeholder="Comments"></textarea>
+                <textarea type="text" name="userComment" id="userComment-input" placeholder="Comments" required data-required-min="10"></textarea>
+                <div id="userComment-error"></div>
             </div>
             <div class="submitbutton">
                 <button type="submit" class="button bg-red">Post Comments</button>
             </div>
         </form>
     </section>
-
-
-    <script src="src/js/app.js"></script>
 </body>
 </html>

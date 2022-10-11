@@ -28,20 +28,49 @@
 //     knapp();
 //   });
 
-// // Initialize and add the map
-// function initMap() {
-//     // The location of Uluru
-//     const uluru = { lat: -25.344, lng: 131.031 };
-//     // The map, centered at Uluru
-//     const map = new google.maps.Map(document.getElementById("map"), {
-//       zoom: 4,
-//       center: uluru,
-//     });
-//     // The marker, positioned at Uluru
-//     const marker = new google.maps.Marker({
-//       position: uluru,
-//       map: map,
-//     });
-//   }
-  
-//   window.initMap = initMap;
+// document.getElementById('contact_form').addEventListener('submit', (e) =>{
+//     e.preventDefault()
+//     console.log(e);
+// })
+'use strict';
+const onSubmit = event => {
+    event.preventDefault()
+    for (let element of event.target)
+        if (element.required) {
+            let input = document.getElementById(`${element.id}-input`).innerText
+            let error = ""
+            switch(element.type) {
+                case 'text':
+                    if (!isNullOrEmpty(element.value)) {
+                        if (!isMinLength(element.value, element.dataset.requiredMin)) {
+                            error = `Your ${input.toLocaleLowerCase()} must contain at least ${element.dataset.requiredMin} letters.`
+                        }
+                    } else {
+                        error = `You must enter a ${input.toLocaleLowerCase()}`
+                    }
+                    console.log('validera text');
+                    break;
+                case 'email':
+                    console.log('validera email');
+                    break;
+                case 'password':
+                    console.log('validera lösenord');
+                    break;
+            }
+            document.getElementById(`${element.id}-error`).innerText = error
+        }
+}
+
+const isNullOrEmpty = value =>{
+    if (value.length === 0)
+        return true
+    
+    return false
+}
+
+const isMinLength = (value, minLength = 2) =>{
+    if (value.length >= minLength)
+        return true
+
+    return false
+}
