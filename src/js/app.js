@@ -48,13 +48,24 @@ const onSubmit = event => {
                     } else {
                         error = `You must enter a ${label.toLocaleLowerCase()}`
                     }
-                    console.log('validera text');
                     break;
                 case 'email':
-                    console.log('validera email');
+                    if (!isNullOrEmpty(element.value)) {
+                        if (!isMinLength(element.value, element.dataset.requiredMin)) {
+                            error = `Your ${label.toLocaleLowerCase()} must contain at least ${element.dataset.requiredMin} letters.`
+                        }
+                    } else {
+                        error = `You must enter an ${label.toLocaleLowerCase()}`
+                    }
                     break;
                 case 'textarea':
-                    console.log('validera lösenord');
+                    if (!isNullOrEmpty(element.value)) {
+                        if (!isMinLength(element.value, element.dataset.requiredMin)) {
+                            error = `Your ${label.toLocaleLowerCase()} must contain at least ${element.dataset.requiredMin} letters.`
+                        }
+                    } else {
+                        error = `You must enter a ${label.toLocaleLowerCase()}`
+                    }
                     break;
             }
             document.getElementById(`${element.id}-error`).innerText = error
@@ -73,4 +84,8 @@ const isMinLength = (value, minLength = 2) =>{
         return true
 
     return false
+}
+
+const isEmailValid = (email) => {
+    const regEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 }

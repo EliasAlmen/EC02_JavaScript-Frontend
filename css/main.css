@@ -296,16 +296,23 @@ ul, ol, li {
 .form textarea {
   resize: none;
 }
-.form #userName-input {
+.form #userName {
   width: 33.625rem;
 }
-.form #userEmail-input {
+.form #userEmail {
   width: 33.625rem;
 }
-.form #userComment-input {
+.form #userComment {
   margin-top: 2.125rem;
   width: 100%;
   height: 8.75rem;
+}
+.form #userComment-error, .form #userEmail-error, .form #userName-error {
+  color: #FF7373;
+  text-align: left;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .breadcrumb {

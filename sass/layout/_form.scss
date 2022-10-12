@@ -30,15 +30,21 @@
     textarea{
         resize: none;
     }
-    #userName-input{
+    #userName{
         width: 33.625rem;
     }
-    #userEmail-input{
+    #userEmail{
         width: 33.625rem;
     }
-    #userComment-input{
+    #userComment{
         margin-top: 2.125rem;
         width: 100%;
         height: 8.75rem;
+    }
+    #userComment-error, #userEmail-error, #userName-error{
+        color: $color-theme;
+        text-align: left;
+        margin-top: 0.5rem;
+        @include font-16-medium;
     }
 }
