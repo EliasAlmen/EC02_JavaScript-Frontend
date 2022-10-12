@@ -26,16 +26,17 @@ const validateElement = (element) => {
         switch(element.type) {
             case 'text':
                 if (!isNullOrEmpty(element.value)) {
+                    console.log(element.value);
                     if (!isMinLength(element.value, element.dataset.requiredMin)) {
                         error = `Your ${label.toLocaleLowerCase()} must contain at least ${element.dataset.requiredMin} letters.`
                     }
                     if (!isNameValid(element.value)) {
-                        error = `Your ${label.toLocaleLowerCase()} cannot contain numbers`
+                        error = `Your ${label.toLocaleLowerCase()} cannot contain numbers or special characters`
                     }
-                    // if (!removeWhiteSpace(element.value)) {
-                    //     error = `Your ${label.toLocaleLowerCase()} cannot start with whitespace`
-                    // } && removeWhiteSpace(element.value)
-                    if (isMinLength(element.value, element.dataset.requiredMin) && isNameValid(element.value)) {
+                    if (checkIfWhiteSpace(element.value)) {
+                        error = `Your ${label.toLocaleLowerCase()} cannot start with a whitespace`
+                    } 
+                    if (isMinLength(element.value, element.dataset.requiredMin) && isNameValid(element.value) && !checkIfWhiteSpace(element.value)) {
                         success = `Looks good!`
                     }
                 } else {
@@ -44,10 +45,14 @@ const validateElement = (element) => {
                 break;
             case 'email':
                 if (!isNullOrEmpty(element.value)) {
+                    console.log(element.value);
+                    // if (checkIfWhiteSpace(element.value)) {
+                    //     error = `Your ${label.toLocaleLowerCase()} cannot start with a whitespace`
+                    // }  && !checkIfWhiteSpace(element.value)
                     if (!isEmailValid(element.value)) {
                         error = `Your ${label.toLocaleLowerCase()} must be valid. (eg. example@domain.com)`
                     }
-                    if (isMinLength(element.value, element.dataset.requiredMin) && isEmailValid(element.value)) {
+                    if (isEmailValid(element.value)) {
                         success = `Looks good!`
                     }
                 } else {
@@ -86,12 +91,13 @@ const isMinLength = (value, minLength = 2) =>{
     return false
 }
 
-// const removeWhiteSpace = value => {
-//     if (value.trim())
-//         return true
-
-//     return false
-// }
+const checkIfWhiteSpace = (whitespace) => {
+    const regEx = /^\s/
+    if (regEx.test(whitespace))
+        return true
+    
+    return false
+}
 
 const isEmailValid = (email) => {
     const regEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
