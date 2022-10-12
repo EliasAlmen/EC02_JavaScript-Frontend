@@ -314,6 +314,13 @@ ul, ol, li {
   font-size: 1rem;
   font-weight: 500;
 }
+.form #userComment-success, .form #userEmail-success, .form #userName-success {
+  color: #50ca45;
+  text-align: left;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
 
 .breadcrumb {
   max-width: 69.375rem;

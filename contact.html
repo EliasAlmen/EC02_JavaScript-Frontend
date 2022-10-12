@@ -44,19 +44,22 @@
             <div class="name_email">
                 <span>
                     <label id="userName-label" for="userName">Name</label>
-                    <input type="text" name="userName" id="userName" placeholder="Your Name" required data-required-min="2">
+                    <input type="text" name="userName" id="userName" placeholder="Your Name" onkeyup="validate(event)" required data-required-min="2">
                     <div id="userName-error"></div>
+                    <div id="userName-success"></div>
                 </span>
                 <span>
                     <label id="userEmail-label" for="userEmail">Email</label>
-                    <input type="email" name="userEmail" id="userEmail" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required data-required-min="5">
+                    <input type="email" name="userEmail" id="userEmail" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onkeyup="validate(event)" required data-required-min="5">
+                    <div id="userEmail-success"></div>
                     <div id="userEmail-error"></div>
                 </span>
             </div>
             <div>
                 <label id="userComment-label" for="userComment">Comment</label>
-                <textarea type="text" name="userComment" id="userComment" placeholder="Comments" required data-required-min="10"></textarea>
-                <div id="userComment-error"></div>
+                <textarea type="text" name="userComment" id="userComment" placeholder="Comments" onkeyup="validate(event)" required data-required-min="10"></textarea>
+                    <div id="userComment-success"></div>
+                    <div id="userComment-error"></div>
             </div>
             <div class="submitbutton">
                 <button type="submit" class="button bg-red">Post Comments</button>

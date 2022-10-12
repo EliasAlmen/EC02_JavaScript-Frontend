@@ -47,4 +47,10 @@
         margin-top: 0.5rem;
         @include font-16-medium;
     }
+    #userComment-success, #userEmail-success, #userName-success{
+        color: $color-green;
+        text-align: left;
+        margin-top: 0.5rem;
+        @include font-16-medium;
+    }
 }
