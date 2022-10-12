@@ -278,6 +278,9 @@ ul, ol, li {
   display: flex;
   margin-top: 2.125rem;
 }
+.form .contact label {
+  display: none;
+}
 .form h1 {
   text-align: start;
 }

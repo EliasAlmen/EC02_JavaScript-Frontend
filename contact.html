@@ -43,15 +43,18 @@
         <form onsubmit="onSubmit(event)" class="contact" novalidate>
             <div class="name_email">
                 <span>
+                    <label id="userName-label" for="userName-input">Name</label>
                     <input type="text" name="userName" id="userName-input" placeholder="Your Name" required data-required-min="2">
                     <div id="userName-error"></div>
                 </span>
                 <span>
+                    <label id="userEmail-label" for="userEmail-input">Email</label>
                     <input type="email" name="userEmail" id="userEmail-input" placeholder="Your Email" required>
                     <div id="userEmail-error"></div>
                 </span>
             </div>
             <div>
+                <label id="userComment-label" for="userComment-input">Comments</label>
                 <textarea type="text" name="userComment" id="userComment-input" placeholder="Comments" required data-required-min="10"></textarea>
                 <div id="userComment-error"></div>
             </div>

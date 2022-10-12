@@ -37,23 +37,23 @@ const onSubmit = event => {
     event.preventDefault()
     for (let element of event.target)
         if (element.required) {
-            let input = document.getElementById(`${element.id}-input`).innerText
+            let label = document.getElementById(`${element.id}-label`).innerText
             let error = ""
             switch(element.type) {
                 case 'text':
                     if (!isNullOrEmpty(element.value)) {
                         if (!isMinLength(element.value, element.dataset.requiredMin)) {
-                            error = `Your ${input.toLocaleLowerCase()} must contain at least ${element.dataset.requiredMin} letters.`
+                            error = `Your ${label.toLocaleLowerCase()} must contain at least ${element.dataset.requiredMin} letters.`
                         }
                     } else {
-                        error = `You must enter a ${input.toLocaleLowerCase()}`
+                        error = `You must enter a ${label.toLocaleLowerCase()}`
                     }
                     console.log('validera text');
                     break;
                 case 'email':
                     console.log('validera email');
                     break;
-                case 'password':
+                case 'textarea':
                     console.log('validera lösenord');
                     break;
             }
