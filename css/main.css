@@ -354,4 +354,42 @@ h3 {
 .breadcrumb ul li a:hover {
   color: #FF7373;
   text-decoration: underline;
+}
+
+.banner-small {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+  height: 25.188rem;
+}
+.banner-small .left {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.banner-small .left .text-button-left {
+  position: absolute;
+  justify-content: center;
+  margin-left: 55%;
+}
+.banner-small .left .text-button-left h1 {
+  font-size: 2.813rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+.banner-small .right {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.banner-small .right .text-button-right {
+  position: absolute;
+  margin-left: 7%;
+}
+.banner-small .right .text-button-right h1 {
+  font-size: 2.813rem;
+  font-weight: 700;
+  color: #23262A;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */
