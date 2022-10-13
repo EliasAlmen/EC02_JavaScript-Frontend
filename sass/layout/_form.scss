@@ -1,56 +1,75 @@
-.form{
-    height: 22rem;
-    max-width: 69.375rem;
-    margin-top: 3rem;
-    margin-bottom: 6.25rem;
-    .contact{
-        .name_email{
-            display: flex;
-            justify-content: space-between;
+.form-middle{
+    display: flex;
+    justify-content: center;
+    .form{
+        height: 22rem;
+        width: 85%;
+        margin-top: 3rem;
+        margin-bottom: 6.25rem;
+        .contact{
+            margin-top: 1rem;
+            .name_email{
+                display: flex;
+                justify-content: space-between;
+                height: 3.125rem;
+                div{
+                    input{
+                        border: 1px solid $color-grey;
+                        height: 100%;
+                        @include font-16;
+                        color: $color-black;
+                        font-family: 'Poppins';
+                        padding: 0.5rem;
+                        width: 33.5em;
+                    }
+                }
+                
+            }
+            .submitbutton{
+                display: flex;
+                margin-top: 2.125rem;
+            }
+            label{
+                display: none;
+            }
+            .comment{
+                margin-top: 1.875rem;
+                height: 8.75rem;
+                textarea{
+                    border: 1px solid $color-grey;
+                    height: 100%;
+                    @include font-16;
+                    color: $color-black;
+                    font-family: 'Poppins';
+                    padding: 0.5rem;
+                    width: 100%;
+                }
+                textarea{
+                    resize: none;
+                }
+            }
         }
-        .submitbutton{
-            display: flex;
-            margin-top: 2.125rem;
+        h1{
+        text-align: start;
+        @include font-18-bold;
         }
-        label{
-            display: none;
+        
+        
+        #userComment-error, #userEmail-error, #userName-error{
+            color: $color-theme;
+            text-align: left;
+            // margin-top: 0.5rem;
+            @include font-16-medium;
+        }
+        
+        #userComment-success, #userEmail-success, #userName-success{
+            color: $color-green;
+            text-align: left;
+            // margin-top: 0.5rem;
+            @include font-16-medium;
+        }
+        #userComment-error, #userComment-success{
+            margin-top: -0.5rem;
         }
     }
-    h1{
-    text-align: start;
-    }
-    input, textarea{
-        border: 1px solid $color-grey;
-        height: 3.125rem;
-        @include font-16;
-        color: $color-black;
-        font-family: 'Poppins';
-        padding: 0.5rem;
-    }
-    textarea{
-        resize: none;
-    }
-    #userName{
-        width: 33.625rem;
-    }
-    #userEmail{
-        width: 33.625rem;
-    }
-    #userComment{
-        margin-top: 2.125rem;
-        width: 100%;
-        height: 8.75rem;
-    }
-    #userComment-error, #userEmail-error, #userName-error{
-        color: $color-theme;
-        text-align: left;
-        margin-top: 0.5rem;
-        @include font-16-medium;
-    }
-    #userComment-success, #userEmail-success, #userName-success{
-        color: $color-green;
-        text-align: left;
-        margin-top: 0.5rem;
-        @include font-16-medium;
-    }
-}
+} 

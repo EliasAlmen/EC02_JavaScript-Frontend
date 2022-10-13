@@ -1,15 +1,9 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 html, body{
     font-family: $font-poppins;
     font-size: $font-size-16;
     font-weight: $font-weight-regular;
     color: $color-black;
-    margin: auto;
+    // margin: auto;
 }
 
 a{
@@ -23,10 +17,3 @@ ul, ol, li{
     list-style-type: none;
 }
 
-.container{
-    max-width: 1680px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
-}
