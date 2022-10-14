@@ -1,7 +1,6 @@
 .banner{
     display: flex;
-    height: 35rem;
-    align-items: center;
+    justify-content: center;
     margin-top: 4rem;
     margin-bottom: 4rem;
 
@@ -16,20 +15,22 @@
         position: relative;
         .clearance{
             position: absolute;
-            display: block;
-            width: 32.625rem;
             padding-left: 3.125rem;
-            
+            margin-top: 4rem;
+            width: 55%;
         }
     }
 
     .banner-small{
         display: flex;
         align-items: center;
+        justify-content: left;
         position: relative;
+        height: 35rem;
+        margin: 0;
         .arrivals{
             position: absolute;
-            margin-top: 5rem;
+            margin-top: 9rem;
             padding-left: 3.125rem;
         }
     }

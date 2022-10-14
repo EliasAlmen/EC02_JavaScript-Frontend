@@ -16,7 +16,7 @@
     <script defer src="src/js/app.js"></script>
 </head>
 <body>
-    <div class="placeholder-bg">
+    <div class="placeholder-bg d-none">
         <!-- header.scss -->
         <header class="container">
             <div class="header">
@@ -47,7 +47,7 @@
         </section>
     </div>
     <!-- banner.scss -->
-    <section class="container">
+    <section class="container-fluid d-none">
         <div class="banner">
             <article class="banner-big">
                 <div class="clearance">
@@ -57,7 +57,7 @@
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem apriam eaque ipsa quae ab illo inventore.</p>
                     <button class="button bg-dark">SHOP NOW</button>
                 </div>
-                <img class="img-fluid" src="src/img/image_clearance.svg" alt="">
+                <img class="img" src="src/img/image_clearance.svg" alt="">
             </article>
             <article class="banner-small">
                 <div class="arrivals">
@@ -66,14 +66,14 @@
                     </h2>
                     <button class="button bg-dark">SHOW NOW</button>
                 </div>
-                <img class="img-fluid" src="src/img/img.svg" alt="">
+                <img class="img" src="src/img/img.svg" alt="">
             </article>
         </div>
     </section>
 
     <!-- cards.scss -->
-    <section class="container">
-        <h3>Featured Product</h3>
+    <section class="container d-none">
+        <h3 id="featured">Featured Product</h3>
         <div class="featured">
             <div class="container-cards">
                 <div class="card-product">
@@ -265,7 +265,7 @@
     </section>
 
     <!-- banner-small.scss -->
-    <section class="container-fluid banner-small">
+    <section class="container-fluid banner-even">
         <div class="left">
             <img class="img-fluid" src="src/img/image_top-pick.svg" alt="top picks">
             <div class="text-button-left">
@@ -276,10 +276,70 @@
         <div class="right">
             <div class="text-button-right">
                 <h1>Let's Be <br> Conscious</h1>
-                <button class="button bg-dark">FLASH SALE</button>
+                <button class="button button-white bg-light">FLASH SALE</button>
             </div>
             <img class="img-fluid" src="src/img/image_conscious.svg" alt="top picks">
         </div>
     </section>
+
+    <!-- speciality.scss -->
+    <section class="container-fluid speciality">
+        <div class="container-speciality flex-column">
+            <div class="container-headings">
+                <h1>Our Speciality</h1>
+            </div>
+            <div class="card-container">
+                <div class="card-speciality">
+                    <div class="white">
+                        <h3>Track Your Order</h3>
+                        <a href="#">Get Started ></a>
+                    </div>
+                    <div class="grey"></div>
+                </div>
+                <div class="card-speciality">
+                    <div class="white">
+                        <h3>Make a Return</h3>
+                        <a href="#">Get Started ></a>
+                    </div>
+                    <div class="grey"></div>
+                </div>
+                <div class="card-speciality">
+                    <div class="white">
+                        <h3>Request a Price <br>Adjustment</h3>
+                        <a href="#">Get Started ></a>
+                    </div>
+                    <div class="grey"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- flashsale-products-left.scss -->
+    <section class="container-fluid">
+        <div class="container-flashsale-left">
+            <div class="flashsale">
+                <h1>2 FOR USD $29</h1>
+                <button class="button button-white bg-light">FLASH SALE</button>
+            </div>
+            <div class="container-products">
+                <h1>palceholder</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- flashsale-products-right.scss -->
+    <section class="container-fluid">
+        <div class="container-flashsale-right">
+            <div class="container-products">
+                <h1>palceholder</h1>
+            </div>
+            <div class="flashsale">
+                <h1>2 FOR USD $29</h1>
+                <button class="button button-white bg-light">FLASH SALE</button>
+            </div>
+            
+        </div>
+    </section>
+
 </body>
 </html>

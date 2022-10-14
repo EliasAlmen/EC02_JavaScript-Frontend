@@ -57,6 +57,15 @@ ul, ol, li {
   height: 2.75rem;
 }
 
+.button-white::after {
+  border-bottom-color: #23262A;
+  border-right-color: #23262A;
+}
+.button-white::before {
+  border-top-color: #23262A;
+  border-left-color: #23262A;
+}
+
 .bg-red {
   background-color: #FF7373;
   color: #FFFFFF;
@@ -136,8 +145,7 @@ ul, ol, li {
 
 .banner {
   display: flex;
-  height: 35rem;
-  align-items: center;
+  justify-content: center;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
@@ -153,18 +161,21 @@ ul, ol, li {
 }
 .banner .banner-big .clearance {
   position: absolute;
-  display: block;
-  width: 32.625rem;
   padding-left: 3.125rem;
+  margin-top: 4rem;
+  width: 55%;
 }
 .banner .banner-small {
   display: flex;
   align-items: center;
+  justify-content: left;
   position: relative;
+  height: 35rem;
+  margin: 0;
 }
 .banner .banner-small .arrivals {
   position: absolute;
-  margin-top: 5rem;
+  margin-top: 9rem;
   padding-left: 3.125rem;
 }
 
@@ -249,7 +260,7 @@ ul, ol, li {
   padding: 0;
 }
 
-h3 {
+#featured {
   margin-bottom: 1.5rem;
   font-size: 1.25em;
   font-weight: 700;
@@ -356,40 +367,146 @@ h3 {
   text-decoration: underline;
 }
 
-.banner-small {
+.banner-even {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 3rem;
   height: 25.188rem;
 }
-.banner-small .left {
+.banner-even .left {
   display: flex;
   position: relative;
   align-items: center;
 }
-.banner-small .left .text-button-left {
+.banner-even .left .text-button-left {
   position: absolute;
   justify-content: center;
   margin-left: 55%;
 }
-.banner-small .left .text-button-left h1 {
+.banner-even .left .text-button-left h1 {
   font-size: 2.813rem;
   font-weight: 700;
   color: #FFFFFF;
   margin-bottom: 1rem;
 }
-.banner-small .right {
+.banner-even .right {
   display: flex;
   position: relative;
   align-items: center;
 }
-.banner-small .right .text-button-right {
+.banner-even .right .text-button-right {
   position: absolute;
   margin-left: 7%;
 }
-.banner-small .right .text-button-right h1 {
+.banner-even .right .text-button-right h1 {
   font-size: 2.813rem;
   font-weight: 700;
   color: #23262A;
   margin-bottom: 1rem;
+}
+
+.speciality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.speciality .container-speciality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 92%;
+  height: 25rem;
+  background-color: #F5F5F5;
+}
+.speciality .container-speciality .container-headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.speciality .container-speciality .container-headings h1 {
+  display: flex;
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.speciality .container-speciality .card-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5.25rem;
+}
+.speciality .container-speciality .card-container .card-speciality {
+  display: flex;
+  width: 30rem;
+  height: 15rem;
+}
+.speciality .container-speciality .card-container .card-speciality .white {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 50%;
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+.speciality .container-speciality .card-container .card-speciality .white h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+.speciality .container-speciality .card-container .card-speciality .white a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #23262A;
+  text-decoration: underline;
+}
+.speciality .container-speciality .card-container .card-speciality .grey {
+  background-color: #BEBEBE;
+  width: 50%;
+}
+
+.container-flashsale-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 3rem;
+  margin-left: 4.75rem;
+}
+.container-flashsale-left .flashsale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 41.5rem;
+  height: 41.5rem;
+  background-color: #BEBEBE;
+  gap: 1rem;
+  color: #FFFFFF;
+}
+.container-flashsale-left .flashsale h1 {
+  font-size: 2.813rem;
+  font-weight: 700;
+}
+
+.container-flashsale-right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 3rem;
+  margin-left: 4.75rem;
+}
+.container-flashsale-right .flashsale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 41.5rem;
+  height: 41.5rem;
+  background-color: #BEBEBE;
+  gap: 1rem;
+  color: #FFFFFF;
+}
+.container-flashsale-right .flashsale h1 {
+  font-size: 2.813rem;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
