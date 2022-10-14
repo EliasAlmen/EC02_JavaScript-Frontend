@@ -1,0 +1,84 @@
+.container-products-category-ranking{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+    .latest, .best, .reacted{
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        // max-width: 75rem;
+        .card-product{
+            display: flex;
+            flex-direction: row;
+            width: 20rem;
+            height: 8.25rem;
+            margin-bottom: 1.875rem;
+            .img-container{
+                background-color: $color-grey-light;
+                height: 8.25rem;
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                transition: background-color 250ms;
+                .quick-view{
+                    position: absolute;
+                    width: 100%;
+                    z-index: 1;
+                    top: 100%;
+                    transition: top 250ms;
+                }
+                .quick-menu{
+                    display: flex;
+                    position: absolute;
+                    margin-top: 0.5rem;
+                    right: 100%;
+                    transition: right 250ms;
+                    a{
+                        display: block;
+                        img{
+                            margin: -0.75rem;
+                        }
+                    }
+                }
+                &:hover{
+                    background-color: $color-black-hover;
+                    .quick-view{
+                        top: 62%;
+                    }
+                    .quick-menu{
+                        right: 16%;
+                    }
+                }
+            }
+            .text{
+                text-align: left;
+                margin-left: 1rem;
+                h5{
+                    color: $color-grey-dark;
+                    @include font-13-medium;
+                    letter-spacing: 0.1rem;
+                    margin: 0.25rem 0;
+                    padding: 0;
+                }
+                h6{
+                    @include font-16-semi;
+                    letter-spacing: 0.1rem;
+                    margin: 0.25rem 0;
+                    padding: 0;
+                }
+                p{
+                    @include font-18-semi;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    h1{
+        @include font-20-bold;
+    }
+}

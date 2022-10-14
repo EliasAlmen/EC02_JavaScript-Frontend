@@ -509,4 +509,113 @@ ul, ol, li {
 .container-flashsale-right .flashsale h1 {
   font-size: 2.813rem;
   font-weight: 700;
+}
+
+.container-banner-flashsale {
+  width: 100%;
+  height: 20rem;
+  background-color: #616365;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+.container-banner-flashsale h1 {
+  font-size: 2.813rem;
+  font-weight: 700;
+}
+.container-banner-flashsale p {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.container-products-category-ranking {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.container-products-category-ranking .latest, .container-products-category-ranking .best, .container-products-category-ranking .reacted {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container-products-category-ranking .latest .card-product, .container-products-category-ranking .best .card-product, .container-products-category-ranking .reacted .card-product {
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  height: 8.25rem;
+  margin-bottom: 1.875rem;
+}
+.container-products-category-ranking .latest .card-product .img-container, .container-products-category-ranking .best .card-product .img-container, .container-products-category-ranking .reacted .card-product .img-container {
+  background-color: #F5F5F5;
+  height: 8.25rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 250ms;
+}
+.container-products-category-ranking .latest .card-product .img-container .quick-view, .container-products-category-ranking .best .card-product .img-container .quick-view, .container-products-category-ranking .reacted .card-product .img-container .quick-view {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 100%;
+  transition: top 250ms;
+}
+.container-products-category-ranking .latest .card-product .img-container .quick-menu, .container-products-category-ranking .best .card-product .img-container .quick-menu, .container-products-category-ranking .reacted .card-product .img-container .quick-menu {
+  display: flex;
+  position: absolute;
+  margin-top: 0.5rem;
+  right: 100%;
+  transition: right 250ms;
+}
+.container-products-category-ranking .latest .card-product .img-container .quick-menu a, .container-products-category-ranking .best .card-product .img-container .quick-menu a, .container-products-category-ranking .reacted .card-product .img-container .quick-menu a {
+  display: block;
+}
+.container-products-category-ranking .latest .card-product .img-container .quick-menu a img, .container-products-category-ranking .best .card-product .img-container .quick-menu a img, .container-products-category-ranking .reacted .card-product .img-container .quick-menu a img {
+  margin: -0.75rem;
+}
+.container-products-category-ranking .latest .card-product .img-container:hover, .container-products-category-ranking .best .card-product .img-container:hover, .container-products-category-ranking .reacted .card-product .img-container:hover {
+  background-color: rgba(35, 38, 42, 0.2039215686);
+}
+.container-products-category-ranking .latest .card-product .img-container:hover .quick-view, .container-products-category-ranking .best .card-product .img-container:hover .quick-view, .container-products-category-ranking .reacted .card-product .img-container:hover .quick-view {
+  top: 62%;
+}
+.container-products-category-ranking .latest .card-product .img-container:hover .quick-menu, .container-products-category-ranking .best .card-product .img-container:hover .quick-menu, .container-products-category-ranking .reacted .card-product .img-container:hover .quick-menu {
+  right: 16%;
+}
+.container-products-category-ranking .latest .card-product .text, .container-products-category-ranking .best .card-product .text, .container-products-category-ranking .reacted .card-product .text {
+  text-align: left;
+  margin-left: 1rem;
+}
+.container-products-category-ranking .latest .card-product .text h5, .container-products-category-ranking .best .card-product .text h5, .container-products-category-ranking .reacted .card-product .text h5 {
+  color: #616365;
+  font-size: 0.813rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin: 0.25rem 0;
+  padding: 0;
+}
+.container-products-category-ranking .latest .card-product .text h6, .container-products-category-ranking .best .card-product .text h6, .container-products-category-ranking .reacted .card-product .text h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin: 0.25rem 0;
+  padding: 0;
+}
+.container-products-category-ranking .latest .card-product .text p, .container-products-category-ranking .best .card-product .text p, .container-products-category-ranking .reacted .card-product .text p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.container-products-category-ranking h1 {
+  font-size: 1.25em;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
