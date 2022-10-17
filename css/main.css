@@ -110,12 +110,41 @@ ul, ol, li {
 }
 .header .nav-text a {
   color: #23262A;
+  transition: all 0.2s;
 }
 .header .nav-text a:hover {
   color: #FF7373;
-  text-decoration: underline;
 }
 .header .nav-text a ~ a {
+  margin-left: 1.875rem;
+}
+.header .nav-icons {
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav-icons a {
+  background-color: #FFFFFF;
+  color: #23262A;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 6px 4px #BEBEBE;
+  position: relative;
+  color: #23262A;
+  transition: all 0.25s;
+}
+.header .nav-icons a:hover {
+  color: #FFFFFF;
+  box-shadow: 0 0 6px 4px #BEBEBE;
+  background-color: #23262A;
+}
+.header .nav-icons a ~ a {
   margin-left: 1.875rem;
 }
 
